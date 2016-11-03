@@ -25,6 +25,8 @@
 #define UTF16BE_ENCODING		0x16
 #define UTF16LE_ENCODING		0x17
 
+int detectEncoding(const std::string &content, std::string &encoding);
+
 class eDVBTextEncodingHandler
 {
 	std::map<std::string, int> m_CountryCodeDefaultMapping;
